@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+<meta charset="utf-8" />
+<title>Arrays</title>
+<meta name="description" content="Arrays. Version 1.0" />
+<meta name="author" content="The Gamer's Guide to Coding" />
+<meta name="dcterms.rights" content="https://creativecommons.org/licenses/by-sa/4.0/" />
+</head>
+
+<body>
+
+  Open the console window to see the result of the script.
+
+  <script>
+
+    var myArray = ["Element 1", "Element 2"];
+    console.log ("myArray: %s", myArray);               // Print full array of myArray
+
+    console.log ("Element 1 only: %s", myArray[1]);     // Print just element 1
+    myArray[1] = "Replacement Element";
+    console.log ("Replaced: %s", myArray[1]);           // Print replacement
+
+    var myArray2 = [];
+    myArray2.push("Element 1");
+    myArray2.push("Element 2");
+    console.log ("Pushed array: %s", myArray2);         // Print full array of myArray2
+
+    var newLength = myArray.push("Element 3");
+    console.log ("The array now has %s elements", newLength);
+
+    var removed = myArray2.pop();
+    console.log ("Removed element: %s", removed);        // Prints 'Element 2'
+    console.log ("Length is now: %s", myArray2.length);  // Prints 1
+
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+<meta charset="utf-8" />
+<title>Objects</title>
+<meta name="description" content="Objects. Version 1.0" />
+<meta name="author" content="The Gamer's Guide to Coding" />
+<meta name="dcterms.rights" content="https://creativecommons.org/licenses/by-sa/4.0/" />
+</head>
+
+<body>
+
+  Open the console window to see the result of the script.
+
+  <script>
+
+    console.log ("new Object:");
+    var myZombie = new Object();
+    myZombie.name = "Frank";
+    myZombie.gender = "male";
+    myZombie.food = "brains";
+    myZombie.yearDead = 2021;
+    myZombie.intro = function() {
+      return this.name + " likes to eat " + this.food;
+    }
+
+    console.log ("Year dead: %s", myZombie.yearDead);
+    console.log (myZombie.intro());
+
+    console.log ("");
+    console.log ("Literal:");
+    var myZombie2 = {
+      name: "Frank",
+      gender: "male",
+      food: "brains",
+      yearDead: 2021
+    };
+    console.log ("Year dead: %s", myZombie2.yearDead);
+
+    console.log ("");
+    console.log ("Constructor function:");
+    function Zombie(name, gender, food, yearDead) {
+      this.name = name;
+      this.gender = gender;
+      this.food = food;
+      this.yearDead = yearDead;
+    }
+    var myZombie2 = new Zombie("Frank", "male", "brains", 2021);
+    console.log ("Year dead: %s", myZombie2.yearDead);
+
+
+  </script>
+
+</body>
+</html>
