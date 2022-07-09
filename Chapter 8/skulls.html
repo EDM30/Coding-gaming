@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+<meta charset="utf-8" />
+<title>Click the Red Skull</title>
+<meta name="description" content="Click the Red Skull. Version 1.0" />
+<meta name="author" content="The Gamer's Guide to Coding" />
+<meta name="dcterms.rights" content="https://creativecommons.org/licenses/by-sa/4.0/" />
+
+<style>
+img {
+  position: absolute;
+  margin: 0;
+}
+
+div {
+  position: absolute;
+  width: 125px;
+  height: 200px;
+  top: 150px;
+}
+
+#text {
+  position: absolute;
+  margin: 0;
+  top: 310px;
+  left: 10px;
+  font-family: "Arial Black", Gadget, sans-serif;
+  font-size: 1.4em;
+  color: white;
+}
+</style>
+
+</head>
+
+<body>
+
+  <p>Open the browser console window to see the result!</p>
+  <img alt="" src="skulls.jpg" />
+  <div id=yellow style="left:15px;" onclick="divClick(this);"></div>
+  <div id="red" style="left:145px;" onclick="divClick(this);"></div>
+  <div id="green" style="left:275px;" onclick="divClick(this);"></div>
+  <p id="text">Click the Red Skull</p>
+
+  <script>
+    function divClick(div) {
+      if (div.id == "red") {
+        console.log ("Correct choice!");
+      } else {
+        console.log ("That skull isn't red.");
+      }
+    }
+  </script>
+
+</body>
+
+</html>
