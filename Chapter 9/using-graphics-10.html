@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+<meta charset="utf-8" />
+<title>Using Graphics 10</title>
+<meta name="description" content="Using Graphics 10. Version 1.0" />
+<meta name="author" content="The Gamer's Guide to Coding" />
+<meta name="dcterms.rights" content="https://creativecommons.org/licenses/by-sa/4.0/" />
+<style>
+#mainContent {
+  position: absolute;
+  background-image: url("./assets/buildings-bg.jpg");
+  width: 500px;
+  height: 500px;
+  overflow: hidden;
+}
+img {
+  position: absolute;
+}
+#left {
+  left: 10px;
+  top: 155px;
+}
+#right {
+  left: 300px;
+  top: 135px;
+}
+#center {
+  left: 130px;
+  top: 20px;
+  visibility: hidden;
+}
+</style>
+</head>
+
+<body>
+  <div id="mainContent"  onclick="document.getElementById('center').style.visibility='visible';">
+    <img id="left" alt="" src="./assets/buildings-left.png" />
+    <img id="right" alt="" src="./assets/buildings-right.png" />
+    <img id="center" alt="" src="./assets/buildings-center.png" />
+  </div>
+</body>
+</html>
