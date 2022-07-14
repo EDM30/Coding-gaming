@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+<meta charset="utf-8" />
+<title>Events - Multiple</title>
+<meta name="description" content="Events =- Multiple. Version 1.0" />
+<meta name="author" content="The Gamer's Guide to Coding" />
+<meta name="dcterms.rights" content="https://creativecommons.org/licenses/by-sa/4.0/" />
+
+</head>
+
+<body>
+  <img id="saucer" class="stuff" alt="" src="./assets/ufo.png">
+
+  <script>
+    var saucer = document.getElementById ("saucer");
+    saucer.addEventListener("click", saucerListen);
+    saucer.addEventListener("mouseover", saucerListen);
+    saucer.addEventListener("mouseout", saucerListen);
+    function saucerListen(ev) {
+      console.log (ev.type);
+    }
+  </script>
+
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+<meta charset="utf-8" />
+<title>Events - Bubble</title>
+<meta name="description" content="Events - Bubble. Version 1.0" />
+<meta name="author" content="The Gamer's Guide to Coding" />
+<meta name="dcterms.rights" content="https://creativecommons.org/licenses/by-sa/4.0/" />
+
+<style>
+#mainContent {
+    background-color: #aaa;
+    border-radius: 0px;
+    margin: 0;
+    padding: 0;
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
+}
+</style>
+
+</head>
+
+<body>
+
+  <div id="mainContent">
+    <img id="saucer" alt="" src="./assets/ufo.png">
+  </div>
+
+  <script>
+    var saucer = document.getElementById ("saucer");
+    var div = document.getElementById ("mainContent");
+    saucer.addEventListener("click", function() {
+      console.log ("saucer");
+    }, false);
+    div.addEventListener("click", function() {
+      console.log ("div");
+    }, false);
+  </script>
+
+</body>
+</html>

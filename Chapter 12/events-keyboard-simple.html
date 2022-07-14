@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+<meta charset="utf-8" />
+<title>Events - Keyboard Simple</title>
+<meta name="description" content="Events - Keyboard Simple. Version 1.0" />
+<meta name="author" content="The Gamer's Guide to Coding" />
+<meta name="dcterms.rights" content="https://creativecommons.org/licenses/by-sa/4.0/" />
+
+<style>
+#mainContent {
+    background-color: #aaa;
+    border-radius: 0px;
+    margin: 0;
+    padding: 0;
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
+}
+</style>
+
+</head>
+
+<body>
+
+  <div id="mainContent">
+    <img id="saucer" alt="" src="./assets/ufo.png">
+  </div>
+
+  <script>
+    document.addEventListener('keydown', getKey);
+    function getKey(ev) {
+      ev.preventDefault();
+      console.log (ev.key);
+    }
+
+  </script>
+
+</body>
+
+</html>

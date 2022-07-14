@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+<meta charset="utf-8">
+<title>Events - Capture/Bubble StopPropagation Simple</title>
+<meta name="description" content="Events - Capture/Bubble StopPropagation Simple. Version 1.0">
+<meta name="author" content="The Gamer's Guide to Coding">
+<meta name="dcterms.rights" content="https://creativecommons.org/licenses/by-sa/4.0/">
+
+<style>
+#mainContent {
+    background-color: #aaa;
+    border-radius: 0px;
+    margin: 0;
+    padding: 0;
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
+}
+</style>
+
+</head>
+
+<body>
+
+  <div id="mainContent">
+    <img id="saucer" alt="" src="./assets/ufo.png">
+  </div>
+
+    <script>
+      var saucer = document.getElementById ("saucer");
+      var div = document.getElementById ("mainContent");
+      saucer.addEventListener("click", clicked, false);
+      div.addEventListener("click", clicked, false);
+      function clicked(ev) {
+        ev.stopPropagation();
+        switch (ev.currentTarget.id) {
+          case "saucer":
+            console.log ("the saucer was clicked");
+            break;
+          case "mainContent":
+            console.log ("the mainContent DIV was clicked");
+            break;
+        }
+      }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+<meta charset="utf-8" />
+<title>Events - Add and Remove</title>
+<meta name="description" content="Events - Add and Remove. Version 1.0" />
+<meta name="author" content="The Gamer's Guide to Coding" />
+<meta name="dcterms.rights" content="https://creativecommons.org/licenses/by-sa/4.0/" />
+
+</head>
+
+<body>
+  <img id="saucer" alt="" src="./assets/ufo.png">
+
+  <script>
+
+    var saucer = document.getElementById ("saucer");
+    saucer.addEventListener("click", clickMe);
+    function clickMe() {
+      console.log ("IMG clicked");
+      saucer.removeEventListener("click", clickMe);
+    }
+
+  </script>
+
+</body>
+
+</html>
