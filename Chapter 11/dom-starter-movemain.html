@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+<meta charset="utf-8" />
+<title>DOM - Move Main</title>
+<meta name="description" content="DOM - Move Main. Version 1.0" />
+<meta name="author" content="The Gamer's Guide to Coding" />
+<meta name="dcterms.rights" content="https://creativecommons.org/licenses/by-sa/4.0/" />
+
+<style>
+body {
+  background-color: #5f9ea0;
+}
+
+#mainContent {
+  position: absolute;
+  width: 604px;
+  height: 604px;
+  background-color: #ff0000;
+  overflow: hidden;
+}
+
+#martian {
+  left: 50px;
+  top:200px;
+  border: none;
+}
+
+#text {
+  position: absolute;
+  left: 25px;
+  top: 30px;
+  font-size: 2.2em;
+  font-weight: bold;
+  color: #fff8dc;
+}
+
+.image {
+  position: absolute;
+  border: 2px solid #fff;
+}
+
+</style>
+</head>
+
+<body>
+  <div id="mainContent">
+    <img id="earth" class="image" alt="" src="earthview.jpg">
+    <img id="martian" class="image" alt="" src="martian-machine.png">
+    <p id="text">The Martians Invade</p>
+  </div>
+
+  <script>
+
+    var mainContent = document.getElementById("mainContent");
+    var earth = document.getElementById("earth");
+    var martian = document.getElementById("martian");
+    var text = document.getElementById("text");
+    var images = document.getElementsByClassName("image");
+    var body = document.getElementsByTagName("body")[0];
+
+    var cLeft = window.getComputedStyle(mainContent).left;
+    mainContent.style.left = parseInt(cLeft) + 250 + "px";
+
+  </script>
+
+</body>
+
+</html>
