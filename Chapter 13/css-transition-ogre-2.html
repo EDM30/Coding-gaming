@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+<meta charset="utf-8" />
+<title>CSS Transition - More Ogres and Humans</title>
+<meta name="description" content="CSS Transition - More Ogres and Humans. Version 1.0" />
+<meta name="author" content="The Gamer's Guide to Coding" />
+<meta name="dcterms.rights" content="https://creativecommons.org/licenses/by-sa/4.0/" />
+
+<style>
+#mainContent {
+  width: 600px;
+  height: 600px;
+  overflow: hidden;
+}
+
+#ogre {
+  position: absolute;
+  width: 600px;
+  height: 600px;
+}
+
+#human {
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  transition: opacity 1.5s ease-in-out;
+}
+#human:hover {
+  opacity: 0;
+  cursor: pointer;
+}
+</style>
+</head>
+
+<body>
+  <div id="mainContent">
+    <img id="ogre" class="image" alt="" src="./assets/ogre.jpg" />
+    <img id="human" class="image" alt="" src="./assets/human.jpg" />
+  </div>
+</body>
+</html>

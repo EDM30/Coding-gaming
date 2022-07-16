@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+<meta charset="utf-8" />
+<title>setInterval Animation</title>
+<meta name="description" content="setInterval Animation. Version 1.0" />
+<meta name="author" content="The Gamer's Guide to Coding" />
+<meta name="dcterms.rights" content="https://creativecommons.org/licenses/by-sa/4.0/" />
+
+<style>
+#mainContent {
+  position: absolute;
+  background-image: url("./assets/stellar.jpg");
+  width: 600px;
+  height: 600px;
+  overflow: hidden;
+}
+
+#ufo1 {
+  position: absolute;
+  left: 100px;
+  top: 175px;
+  width: 400px;
+  height:162px;
+}
+</style>
+</head>
+
+<body>
+  <div id="mainContent">
+    <img id="ufo1" class="ufo-large" alt="" src="./assets/ufo1.png" />
+  </div>
+
+  <script type="text/javascript">
+    var counter = -400;
+    var loopTimer = setInterval(animationLoop, 50);
+    function animationLoop() {
+      if (counter < 615) {
+        counter += 20;
+        document.getElementById("ufo1").style.left = counter + "px";
+      } else {
+        clearInterval (loopTimer);
+      }
+    }
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+<meta charset="utf-8" />
+<title>CSS Animation - UFO</title>
+<meta name="description" content="CSS Animation - UFO. Version 1.0" />
+<meta name="author" content="The Gamer's Guide to Coding" />
+<meta name="dcterms.rights" content="https://creativecommons.org/licenses/by-sa/4.0/" />
+
+<style>
+#mainContent {
+  background-image: url("./assets/stellar.jpg");
+  width: 600px;
+  height: 600px;
+  overflow: hidden;
+}
+
+#ufo1 {
+  position: absolute;
+  left: 100px;
+  top: 80px;
+  width: 400px;
+  height: 162px;
+  animation: hoverUfo 10s infinite;
+}
+
+@keyframes hoverUfo {
+  0%   { top: 80px  }
+  50%  { top: 270px }
+  100% { top: 80px  }
+}
+</style>
+</head>
+
+<body>
+  <div id="mainContent">
+    <img id="ufo1" class="ufo-large" alt="" src="./assets/ufo1.png" />
+  </div>
+
+</body>
+</html>

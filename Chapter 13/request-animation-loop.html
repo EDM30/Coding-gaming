@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+<meta charset="utf-8" />
+<title>Request Animation Frame</title>
+<meta name="description" content="Request Animation Frame. Version 1.0" />
+<meta name="author" content="The Gamer's Guide to Coding" />
+<meta name="dcterms.rights" content="https://creativecommons.org/licenses/by-sa/4.0/" />
+
+<style>
+#mainContent {
+  position: absolute;
+  background-image: url("./assets/stellar.jpg");
+  width: 600px;
+  height: 600px;
+  overflow: hidden;
+}
+
+#ufo1 {
+  position: absolute;
+  left: 100px;
+  top: 175px;
+  width: 400px;
+  height:162px;
+}
+</style>
+</head>
+
+<body>
+  <div id="mainContent">
+    <img id="ufo1" class="ufo-large" alt="" src="./assets/ufo1.png" />
+  </div>
+
+  <script>
+    var counter = -400;
+    function animationLoop() {
+      if (counter < 615) {
+        counter += 5;
+        document.getElementById("ufo1").style.left = counter + "px";
+        window.requestAnimationFrame(animationLoop);
+      }
+    }
+    animationLoop();
+  </script>
+
+</body>
+</html>
