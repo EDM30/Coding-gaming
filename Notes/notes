@@ -1,0 +1,20 @@
+The @keyframes rule specifies the animation code.
+
+The animation is created by gradually changing from one set of CSS styles to another.
+
+During the animation, you can change the set of CSS styles many times.
+
+
+What is an event listener.
+
+An event listener is a procedure or function in a computer program that waaits for an event to occur
+
+What is an event handler.
+
+Event handlers can be used to handle and verify user input, user actions, and browser actions: Things that should be done and every time aa page loads. Things that should be done when the page is closed. Action that should be performed when a user clicks a button.
+
+Document.getelementbyid() The document method getelementbyid() returns an Element object representing the element whose id properly matches the specified string.
+
+Chapter 14 Creating motion with css animations
+
+Overview: to deepen your understanding of css transitions to add action and movement to any HTML element in your game.
